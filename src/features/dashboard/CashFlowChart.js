@@ -15,7 +15,8 @@ const CashFlowChart = () => {
         value === null || value === undefined ? Math.random() * 100 : value,
     }));
 
-  const [data, setData] = useState(generateData());
+  // const [data, setData] = useState(generateData());
+  const [data] = useState(generateData());
 
   return (
     <StyledCashFlowChart>

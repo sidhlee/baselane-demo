@@ -63,7 +63,8 @@ const Rect = ({ data, x, y, height, top, bottom }) => {
 };
 
 const Bar = (props) => {
-  const [sort, setSort] = useState(false);
+  // const [sort, setSort] = useState(false);
+  const [sort] = useState(false);
 
   const data = sort
     ? [...props.data].sort((a, b) => b.value - a.value)
